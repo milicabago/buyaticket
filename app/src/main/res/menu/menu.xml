@@ -9,6 +9,10 @@
         android:icon="@drawable/favorites_24"
         android:id="@+id/favorites"/>
 
+    <item android:title="Checkout"
+        android:icon="@drawable/baseline_add_shopping_cart_24"
+        android:id="@+id/checkout"/>
+
     <item android:title="Profile"
         android:icon="@drawable/profile_24"
         android:id="@+id/profile"/>
