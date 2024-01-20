@@ -13,6 +13,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationBarView;
 
+import ba.sum.fsre.buyaticket.fragments.BuyFragment;
 import ba.sum.fsre.buyaticket.fragments.FavoritesFragment;
 import ba.sum.fsre.buyaticket.fragments.HomeFragment;
 import ba.sum.fsre.buyaticket.fragments.ProfileFragment;
@@ -46,6 +47,11 @@ public class MainActivity extends AppCompatActivity {
 
                 else if (menuItemId == R.id.favorites) {
                     replaceFragment(new FavoritesFragment());
+                    return true;
+                }
+
+                else if (menuItemId == R.id.checkout) {
+                    replaceFragment(new BuyFragment());
                     return true;
                 }
 
