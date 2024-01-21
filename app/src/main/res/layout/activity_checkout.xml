@@ -39,7 +39,7 @@
             android:textStyle="bold" />
 
         <View
-            android:id="@+id/divider"
+            android:id="@+id/divide"
             android:layout_width="match_parent"
             android:layout_height="3dp"
             android:background="?android:attr/listDivider" />
@@ -59,11 +59,11 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageViewIzvodac"
+                    android:id="@+id/imageViewPerformer"
                     android:layout_width="191dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
-                    android:src="@tools:sample/avatars" />
+                    android:src="@drawable/image" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -72,7 +72,7 @@
                     android:orientation="vertical">
 
                     <EditText
-                        android:id="@+id/editTextIzvodac"
+                        android:id="@+id/editTextPerformer"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:ems="10"
@@ -81,7 +81,7 @@
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextDatum"
+                        android:id="@+id/editTextDate"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:ems="10"
@@ -90,7 +90,7 @@
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextCijena"
+                        android:id="@+id/editTextPrice"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:ems="10"
@@ -99,7 +99,7 @@
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextLokacija"
+                        android:id="@+id/editTextLocation"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:ems="10"
@@ -177,11 +177,11 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageViewIzvodac"
+                    android:id="@+id/imageViewPerformer1"
                     android:layout_width="191dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
-                    android:src="@tools:sample/avatars" />
+                    android:src="@drawable/image" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -190,7 +190,7 @@
                     android:orientation="vertical">
 
                     <EditText
-                        android:id="@+id/editTextIzvodac"
+                        android:id="@+id/editTextPerformer1"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:ems="10"
@@ -199,7 +199,7 @@
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextDatum"
+                        android:id="@+id/editTextDate1"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:ems="10"
@@ -208,7 +208,7 @@
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextCijena"
+                        android:id="@+id/editTextPrice1"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:ems="10"
@@ -217,7 +217,7 @@
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextLokacija"
+                        android:id="@+id/editTextLocation1"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:ems="10"
@@ -242,7 +242,7 @@
                     android:layout_width="191dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="6"
-                    android:src="@tools:sample/avatars" />
+                    android:src="@drawable/image" />
 
                 <LinearLayout
                     android:layout_width="match_parent"

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "696565934324",
+    "project_id": "buyaticket-92291",
+    "storage_bucket": "buyaticket-92291.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:696565934324:android:face6561b15bb8344c56a1",
+        "android_client_info": {
+          "package_name": "ba.sum.fsre.buyaticket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl4OzaMq3sNqBR974dK6FwjAlV32Hm3RM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
