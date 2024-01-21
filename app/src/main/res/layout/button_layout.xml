@@ -1,0 +1,11 @@
+<!-- button_item.xml -->
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:textAlignment="center"
+    android:textSize="16sp"
+    android:background="@drawable/button_background"
+    android:textColor="@android:color/white"/>
