@@ -34,7 +34,6 @@ public class HomeActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
     private FirebaseRecyclerAdapter<CardModel, CardViewHolder> cardAdapterHolder;
-    private LinearLayout sortingButtonsLayout;
 
 
 
