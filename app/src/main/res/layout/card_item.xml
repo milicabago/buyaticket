@@ -69,6 +69,14 @@
             android:text="Mjesto održavanja"
             android:textSize="14sp"
             android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/cardPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cijena: "
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
     </LinearLayout>
 
 </RelativeLayout>

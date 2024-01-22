@@ -9,7 +9,9 @@
     app:barrierAllowsGoneWidgets="false"
     tools:context=".HelloActivity">
 
+    <!-- First set of views -->
     <LinearLayout
+        android:id="@+id/firstSetContainer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="50dp"
@@ -36,7 +38,6 @@
             android:textSize="38sp"
             android:textStyle="bold" />
 
-
         <View
             android:id="@+id/divider"
             android:layout_width="match_parent"
@@ -44,12 +45,15 @@
             android:background="?android:attr/listDivider" />
 
         <LinearLayout
+            android:id="@+id/firstItemContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
             android:orientation="vertical">
 
+            <!-- First item -->
             <LinearLayout
+                android:id="@+id/firstItemInnerContainer"
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:layout_marginTop="5dp"
@@ -58,23 +62,23 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageViewColic"
+                    android:id="@+id/imageViewColic1"
                     android:layout_width="191dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="3dp"
                     android:layout_marginRight="3dp"
                     android:layout_weight="6"
-                    android:src="@drawable/image"
-                    app:srcCompat="@drawable/colic" />
+                    android:src="@drawable/image" />
 
                 <LinearLayout
+                    android:id="@+id/firstItemTextContainer"
                     android:layout_width="match_parent"
                     android:layout_height="180dp"
                     android:layout_weight="10"
                     android:orientation="vertical">
 
                     <EditText
-                        android:id="@+id/editTextPerformer"
+                        android:id="@+id/editTextPerformer1"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_weight="1"
@@ -84,7 +88,7 @@
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextDate"
+                        android:id="@+id/editTextDate1"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_weight="1"
@@ -94,7 +98,7 @@
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextPrice"
+                        android:id="@+id/editTextPrice1"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_weight="1"
@@ -104,7 +108,7 @@
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextLocation"
+                        android:id="@+id/editTextLocation1"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:layout_weight="1"
@@ -114,13 +118,14 @@
                         android:textSize="10sp" />
 
                     <LinearLayout
+                        android:id="@+id/quantityControlContainer1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/button1_minus"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -131,7 +136,7 @@
                             android:textSize="16sp" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/textView1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -139,7 +144,7 @@
                             android:textAlignment="center" />
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/button1_plus"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
@@ -154,13 +159,14 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/heartContainer1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="20"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageViewHeart12"
+                        android:id="@+id/imageViewHeart1"
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
                         android:src="@drawable/heart__1_"
@@ -170,255 +176,8 @@
 
             </LinearLayout>
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="20dp"
-                android:background="#FBF1F1"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageViewMarija"
-                    android:layout_width="191dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginRight="3dp"
-                    android:layout_weight="6"
-                    android:src="@drawable/image"
-                    app:srcCompat="@drawable/marijas" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:layout_weight="10"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextPerformer"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Izvodac"
-                        android:textSize="10sp" />
-
-                    <EditText
-                        android:id="@+id/editTextDate"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="date"
-                        android:inputType="date"
-                        android:textSize="10sp" />
-
-                    <EditText
-                        android:id="@+id/editTextPrice"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="price"
-                        android:inputType="numberDecimal"
-                        android:textSize="10sp" />
-
-                    <EditText
-                        android:id="@+id/editTextLocation"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Lokacija"
-                        android:textSize="10sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/button2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:backgroundTint="#16EB87"
-                            android:backgroundTintMode="src_over"
-                            android:text="-"
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="0"
-                            android:textAlignment="center" />
-
-                        <Button
-                            android:id="@+id/button2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:backgroundTint="#16EB87"
-                            android:backgroundTintMode="src_over"
-                            android:text="+"
-                            android:textAlignment="center"
-                            android:textColor="#000000"
-                            android:textSize="16sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageViewHeart12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:src="@drawable/heart__1_"
-                        app:srcCompat="@drawable/heart" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="20dp"
-                android:background="#FBF1F1"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageViewGraso"
-                    android:layout_width="191dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="3dp"
-                    android:layout_marginRight="3dp"
-                    android:layout_weight="6"
-                    android:src="@drawable/image"
-                    app:srcCompat="@drawable/graso" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
-                    android:layout_weight="10"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextPerformer"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Izvodac"
-                        android:textSize="10sp" />
-
-                    <EditText
-                        android:id="@+id/editTextDate"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="date"
-                        android:inputType="date"
-                        android:textSize="10sp" />
-
-                    <EditText
-                        android:id="@+id/editTextPrice"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="price"
-                        android:inputType="numberDecimal"
-                        android:textSize="10sp" />
-
-                    <EditText
-                        android:id="@+id/editTextLocation"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Lokacija"
-                        android:textSize="10sp" />
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
-
-                        <Button
-                            android:id="@+id/button2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:backgroundTint="#16EB87"
-                            android:backgroundTintMode="src_over"
-                            android:text="-"
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:id="@+id/textView3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="0"
-                            android:textAlignment="center" />
-
-                        <Button
-                            android:id="@+id/button2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:backgroundTint="#16EB87"
-                            android:backgroundTintMode="src_over"
-                            android:text="+"
-                            android:textAlignment="center"
-                            android:textColor="#000000"
-                            android:textSize="16sp" />
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="20"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageViewHeart12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:src="@drawable/heart__1_"
-                        app:srcCompat="@drawable/heart" />
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-
-
+            <!-- Repeat the above pattern for other items -->
 
         </LinearLayout>
-
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
