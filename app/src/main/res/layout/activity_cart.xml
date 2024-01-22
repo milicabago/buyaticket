@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#241E20"
+    android:backgroundTintMode="src_over"
     app:barrierAllowsGoneWidgets="false"
     tools:context=".HelloActivity">
 
@@ -23,19 +24,18 @@
         <TextView
             android:id="@+id/textViewNav"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_marginBottom="5dp"
-            android:includeFontPadding="false"
-            android:lineSpacingExtra="8sp"
-            android:shadowColor="#9F9F9F"
-            android:shadowDx="10"
-            android:shadowDy="10"
+            android:shadowColor="#E1E1E1"
+            android:shadowDx="7"
+            android:shadowDy="7"
             android:shadowRadius="5"
             android:text="Cart"
-            android:textAlignment="center"
-            android:textColor="#3C3C3C"
-            android:textSize="48sp"
+            android:textAlignment="viewStart"
+            android:textColor="#17D2A0"
+            android:textSize="38sp"
             android:textStyle="bold" />
+
 
         <View
             android:id="@+id/divider"
@@ -51,22 +51,25 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="125dp"
+                android:layout_height="180dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 android:background="#FBF1F1"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageViewPerformer"
+                    android:id="@+id/imageViewColic"
                     android:layout_width="191dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6"/>
-                  <!--  android:src="@tools:sample/avatars" /> -->
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_weight="6"
+                    android:src="@drawable/image"
+                    app:srcCompat="@drawable/colic" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="180dp"
                     android:layout_weight="10"
                     android:orientation="vertical">
 
@@ -74,6 +77,7 @@
                         android:id="@+id/editTextPerformer"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="text"
                         android:text="Izvodac"
@@ -83,6 +87,7 @@
                         android:id="@+id/editTextDate"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:hint="date"
                         android:inputType="date"
@@ -92,6 +97,7 @@
                         android:id="@+id/editTextPrice"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:hint="price"
                         android:inputType="numberDecimal"
@@ -101,16 +107,55 @@
                         android:id="@+id/editTextLocation"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="text"
                         android:text="Lokacija"
                         android:textSize="10sp" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#16EB87"
+                            android:backgroundTintMode="src_over"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#16EB87"
+                            android:backgroundTintMode="src_over"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="20"
                     android:orientation="vertical">
 
@@ -118,14 +163,8 @@
                         android:id="@+id/imageViewHeart12"
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
-                        android:src="@drawable/heart__1_" />
-
-                    <ImageView
-                        android:id="@+id/imageCart12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:layout_marginTop="80dp"
-                        android:src="@drawable/shopping_cart__1_" />
+                        android:src="@drawable/heart__1_"
+                        app:srcCompat="@drawable/heart" />
 
                 </LinearLayout>
 
@@ -134,249 +173,248 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="125dp"
+                android:layout_height="180dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 android:background="#FBF1F1"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageViewPerformer1"
+                    android:id="@+id/imageViewMarija"
                     android:layout_width="191dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="6"/>
-                    <!-- android:src="@tools:sample/avatars" /> -->
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="10"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/editTextPerformer1"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Izvodac"
-                        android:textSize="10sp" />
-
-                    <EditText
-                        android:id="@+id/editTextDate1"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:ems="10"
-                        android:hint="date"
-                        android:inputType="date"
-                        android:textSize="10sp" />
-
-                    <EditText
-                        android:id="@+id/editTextPrice1"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:ems="10"
-                        android:hint="price"
-                        android:inputType="numberDecimal"
-                        android:textSize="10sp" />
-
-                    <EditText
-                        android:id="@+id/editTextLocation1"
-                        android:layout_width="match_parent"
-                        android:layout_height="30dp"
-                        android:ems="10"
-                        android:inputType="text"
-                        android:text="Lokacija"
-                        android:textSize="10sp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="20"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/imageViewHeart13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:src="@drawable/heart__1_" />
-
-                    <ImageView
-                        android:id="@+id/imageCart13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:layout_marginTop="80dp"
-                        android:src="@drawable/shopping_cart__1_"/>
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="125dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                android:background="#FBF1F1"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageViewPerformer2"
-                    android:layout_width="191dp"
-                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
                     android:layout_weight="6"
-                    android:src="@drawable/image" />
+                    android:src="@drawable/image"
+                    app:srcCompat="@drawable/marijas" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="180dp"
                     android:layout_weight="10"
                     android:orientation="vertical">
 
                     <EditText
-                        android:id="@+id/editTextPerformer2"
+                        android:id="@+id/editTextPerformer"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="text"
                         android:text="Izvodac"
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextDate2"
+                        android:id="@+id/editTextDate"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:hint="date"
                         android:inputType="date"
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextPrice2"
+                        android:id="@+id/editTextPrice"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:hint="price"
                         android:inputType="numberDecimal"
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextLocation2"
+                        android:id="@+id/editTextLocation"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="text"
                         android:text="Lokacija"
                         android:textSize="10sp" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#16EB87"
+                            android:backgroundTintMode="src_over"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#16EB87"
+                            android:backgroundTintMode="src_over"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="20"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageViewHeart14"
+                        android:id="@+id/imageViewHeart12"
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
-                        android:src="@drawable/heart__1_" />
-
-                    <ImageView
-                        android:id="@+id/imageCart14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:layout_marginTop="80dp"
-                        android:src="@drawable/shopping_cart__1_" />
+                        android:src="@drawable/heart__1_"
+                        app:srcCompat="@drawable/heart" />
 
                 </LinearLayout>
 
             </LinearLayout>
 
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="125dp"
+                android:layout_height="180dp"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="20dp"
                 android:background="#FBF1F1"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:id="@+id/imageViewIzvodac"
+                    android:id="@+id/imageViewGraso"
                     android:layout_width="191dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
                     android:layout_weight="6"
-                    android:src="@drawable/image" />
+                    android:src="@drawable/image"
+                    app:srcCompat="@drawable/graso" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
+                    android:layout_height="180dp"
                     android:layout_weight="10"
                     android:orientation="vertical">
 
                     <EditText
-                        android:id="@+id/editTextIzvodac"
+                        android:id="@+id/editTextPerformer"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="text"
                         android:text="Izvodac"
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextDatum"
+                        android:id="@+id/editTextDate"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:hint="date"
                         android:inputType="date"
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextCijena"
+                        android:id="@+id/editTextPrice"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:hint="price"
                         android:inputType="numberDecimal"
                         android:textSize="10sp" />
 
                     <EditText
-                        android:id="@+id/editTextLokacija"
+                        android:id="@+id/editTextLocation"
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
+                        android:layout_weight="1"
                         android:ems="10"
                         android:inputType="text"
                         android:text="Lokacija"
                         android:textSize="10sp" />
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#16EB87"
+                            android:backgroundTintMode="src_over"
+                            android:text="-"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="0"
+                            android:textAlignment="center" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:backgroundTint="#16EB87"
+                            android:backgroundTintMode="src_over"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_weight="20"
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imageViewHeart1"
+                        android:id="@+id/imageViewHeart12"
                         android:layout_width="wrap_content"
                         android:layout_height="20dp"
-                        android:src="@drawable/heart__1_" />
-
-                    <ImageView
-                        android:id="@+id/imageCart1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="20dp"
-                        android:layout_marginTop="80dp"
-                        android:src="@drawable/shopping_cart__1_" />
+                        android:src="@drawable/heart__1_"
+                        app:srcCompat="@drawable/heart" />
 
                 </LinearLayout>
 
             </LinearLayout>
+
+
 
 
         </LinearLayout>
