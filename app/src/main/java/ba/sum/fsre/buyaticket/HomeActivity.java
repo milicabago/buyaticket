@@ -183,6 +183,7 @@ public class HomeActivity extends AppCompatActivity {
         TextView cardName;
         TextView cardLocation;
         TextView cardPrice;
+        Button btnAddToCart;
 
         public CardViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -191,6 +192,7 @@ public class HomeActivity extends AppCompatActivity {
             cardName = itemView.findViewById(R.id.cardName);
             cardLocation = itemView.findViewById(R.id.cardLocation);
             cardPrice = itemView.findViewById(R.id.cardPrice);
+            btnAddToCart = itemView.findViewById(R.id.btnAddToCart);
         }
     }
 
