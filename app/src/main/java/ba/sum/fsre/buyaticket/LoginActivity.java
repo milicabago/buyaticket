@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -17,7 +15,6 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.database.FirebaseDatabase;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -28,26 +25,17 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
 
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance();
 
-        // Check if the user is already logged in
-        FirebaseUser currentUser = mAuth.getCurrentUser();
-        if (currentUser != null) {
-            // User is already logged in, redirect to MainActivity
-            redirectToMainActivity();
-        } else {
-            // User not logged in, show login screen
-            setContentView(R.layout.activity_login);
+        // Initialize UI elements
+        emailEditText = findViewById(R.id.editTextEmailAddress);
+        passwordEditText = findViewById(R.id.editTextConfirmPassword);
+        loginButton = findViewById(R.id.buttonLogin);
 
-            // Initialize UI elements
-            emailEditText = findViewById(R.id.editTextEmailAddress);
-            passwordEditText = findViewById(R.id.editTextConfirmPassword);
-            loginButton = findViewById(R.id.buttonLogin);
-
-            loginButton.setOnClickListener(v -> loginUser());
-        }
+        loginButton.setOnClickListener(v -> loginUser());
     }
 
     private void loginUser() {
