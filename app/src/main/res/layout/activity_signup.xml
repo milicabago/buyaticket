@@ -3,28 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#241E20"
+    tools:context=".SignupActivity">
 
 
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="60dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vect"
+        tools:layout_editor_absoluteX="0dp"
+        tools:visibility="visible" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="280dp"
         android:layout_marginEnd="50dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:id="@+id/imageViewLogo"
-            android:layout_width="match_parent"
-            android:layout_height="178dp"
-            android:visibility="visible"
-            app:srcCompat="@drawable/ticket"
-            tools:visibility="visible" />
 
 
         <TextView
@@ -35,13 +39,13 @@
             android:layout_marginBottom="20dp"
             android:includeFontPadding="false"
             android:lineSpacingExtra="8sp"
-            android:shadowColor="#9F9F9F"
-            android:shadowDx="10"
-            android:shadowDy="10"
+            android:shadowColor="#E1E1E1"
+            android:shadowDx="7"
+            android:shadowDy="7"
             android:shadowRadius="5"
-            android:text="Sign up"
+            android:text="Signup"
             android:textAlignment="center"
-            android:textColor="#3C3C3C"
+            android:textColor="#17D2A0"
             android:textSize="48sp"
             android:textStyle="bold" />
 
@@ -58,7 +62,9 @@
             android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="First name"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
 
         <EditText
             android:id="@+id/editTextLastName"
@@ -67,7 +73,9 @@
             android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="Last name"
-            android:inputType="text" />
+            android:inputType="text"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
 
         <EditText
             android:id="@+id/editTextEmailAddress"
@@ -76,7 +84,9 @@
             android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
 
         <EditText
             android:id="@+id/editTextConfirmPassword"
@@ -85,7 +95,9 @@
             android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
 
         <EditText
             android:id="@+id/editTextTextPassword3"
@@ -94,13 +106,17 @@
             android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="Confirm password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"/>
 
         <Button
             android:id="@+id/buttonSignup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
+            android:backgroundTint="#00AF4B"
+            android:backgroundTintMode="src_over"
             android:text="Sign up"
             android:textSize="16sp" />
 
@@ -109,7 +125,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Already have an account " />
+            android:text="Already have an account "
+            android:textColor="#FFFFFF"/>
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

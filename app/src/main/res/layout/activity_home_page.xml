@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#241E20"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -11,55 +13,87 @@
 
     <!-- Dugmad za sortiranje -->
     <LinearLayout
-        android:id="@+id/sortingButtonsLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginEnd="16dp">
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnToday"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:id="@+id/sortingButtonsLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Danas" />
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnTomorrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sutra" />
+            <Button
+                android:id="@+id/btnToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#16EB87"
+                android:backgroundTintMode="src_over"
+                android:text="Danas"
+                android:textSize="16sp" />
 
-        <Button
-            android:id="@+id/btnConcert"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Koncerti" />
+            <Button
+                android:id="@+id/btnTomorrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#16EB87"
+                android:backgroundTintMode="src_over"
+                android:text="Sutra" />
 
-        <Button
-            android:id="@+id/btnGame"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Utakmice" />
+            <Button
+                android:id="@+id/btnConcert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#16EB87"
+                android:backgroundTintMode="src_over"
+                android:text="Koncerti" />
 
-        <Button
-            android:id="@+id/btnMovie"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Filmovi" />
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/btnTheater"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Predstave" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
+            <Button
+                android:id="@+id/btnGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#16EB87"
+                android:backgroundTintMode="src_over"
+                android:text="Utakmice" />
+
+            <Button
+                android:id="@+id/btnMovie"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#16EB87"
+                android:backgroundTintMode="src_over"
+                android:text="Filmovi" />
+
+            <Button
+                android:id="@+id/btnTheater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="#16EB87"
+                android:backgroundTintMode="src_over"
+                android:text="Predstave" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cardsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
     </LinearLayout>
 
     <!-- Lista dostupnih karata -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/cardsRecyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/sortingButtonsLayout" />
 
 </RelativeLayout>
