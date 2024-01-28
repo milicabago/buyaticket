@@ -62,6 +62,12 @@
             android:layout_height="wrap_content"
             android:text="Add to cart"
             android:layout_marginTop="8dp" />
+        <Button
+            android:id="@+id/btnAddToFavorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to favorites"
+            android:layout_marginTop="8dp" />
     </LinearLayout>
 
 </RelativeLayout>

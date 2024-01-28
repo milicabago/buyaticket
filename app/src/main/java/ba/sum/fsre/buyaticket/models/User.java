@@ -1,14 +1,18 @@
 package ba.sum.fsre.buyaticket.models;
 
 public class User {
-    public String username;
-    public String password;
-    public String email;
+
+    private Integer id;
+
+    private String username;
+    private String password;
+    private String email;
 
     public User() {
     }
 
-    public User(String username, String password, String email) {
+    public User(Integer id, String username, String password, String email) {
+        this.id = id;
         this.username = username;
         this.password = password;
         this.email = email;
@@ -36,5 +40,13 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }

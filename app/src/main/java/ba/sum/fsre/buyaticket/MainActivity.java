@@ -3,13 +3,12 @@ package ba.sum.fsre.buyaticket;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.RelativeLayout;
 
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -18,13 +17,14 @@ import ba.sum.fsre.buyaticket.fragments.FavoritesFragment;
 import ba.sum.fsre.buyaticket.fragments.HomeFragment;
 import ba.sum.fsre.buyaticket.fragments.ProfileFragment;
 
-import android.os.Bundle;
 
 import ba.sum.fsre.buyaticket.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
+
+    private RelativeLayout mainLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

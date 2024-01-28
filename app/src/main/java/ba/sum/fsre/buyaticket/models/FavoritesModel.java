@@ -1,23 +1,42 @@
 package ba.sum.fsre.buyaticket.models;
 
-public class CardModel {
+public class FavoritesModel {
 
-    private String cardId;
+    private Integer userId;
+    private Integer cardId;
     private String date;
     private String cardName;
     private String location;
     private String image;
     private double price;
 
-    public CardModel() {
+    public FavoritesModel() {
     }
 
-    public CardModel(String date, String cardName, String location, String image, double price) {
+    public FavoritesModel(Integer userId, Integer cardId, String date, String cardName, String location, String image, double price) {
+        this.userId = userId;
+        this.cardId = cardId;
         this.date = date;
         this.cardName = cardName;
         this.location = location;
         this.image = image;
         this.price = price;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    public Integer getCardId() {
+        return cardId;
+    }
+
+    public void setCardId(Integer cardId) {
+        this.cardId = cardId;
     }
 
     public String getDate() {
@@ -59,23 +78,4 @@ public class CardModel {
     public void setPrice(double price) {
         this.price = price;
     }
-
-    public String getEventType() {
-        if (cardName != null && cardName.contains("-")) {
-            String[] parts = cardName.split("-");
-            if (parts.length > 0) {
-                return parts[0].trim();
-            }
-        }
-        return "";
-    }
-
-    public String getCardId() {
-        return cardId;
-    }
-
-    public void setCardId(String cardId) {
-        this.cardId = cardId;
-    }
-
 }
